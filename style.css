@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+/* navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 10%;
+    background-color: #1e3a8a;
+}
+
+.logo {
+    color: white;
+    font-size: 28px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav ul li a:hover {
+    color: lightskyblue;
+}
+
+/* Hero Section */
+
+.hero{
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background: linear-gradient(rgba(0,0,0,0.5)),
+                url("./img/1.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.hero-text{
+    color: white;
+}
+
+.hero-text h1{
+    font-size: 55px;
+    margin-bottom: 15px;
+}
+
+.hero-text p{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.btn{
+    display: inline-block;
+    background: orange;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover{
+    background: rgb(198, 129,1);
+}
+.about{
+    padding: 100px 10%;
+    background-color: #ffff;
+}
+
+.about-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+    flex-wrap: wrap;
+}
+
+.about-image{
+    flex: 1;
+}
+
+.about-image img{
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.about-contect{
+    flex: 1;
+}
+.about-contect h2{
+    font-size: 42px;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+}
+
+.about-contect p{
+    color: #555;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    font-size: 17px;
+}
+
+.about-btn{
+    display: inline-block;
+    margin-top: 15px;
+    background: #1e3a8a;
+    padding: 14px 30px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+.about-btn:hover{
+    background: #01195d;
+}
+/* Courses */
+
+.courses{
+    padding: 100px 3%;
+    background: #f8fafc;
+}
+
+.courses h2{
+    text-align: center;
+    font-size: 42px;
+    color: #1e3a8a;
+    margin-bottom: 50px;
+}
+
+.course-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(280px,1fr));
+    gap: 20px;
+}
+
+.course-card{
+    background: #fff;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 5px 20px rgba(0,0,0,.1);
+    transition: .4s;
+}
+
+.course-card:hover{
+    transform: translateY(-10px);
+}
+
+.course-card img{
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+}
+
+.course-content{
+    padding: 25px;
+}
+
+.course-content h3{
+    color: #1e3a8a;
+    margin-bottom: 10px;
+    font-size: 24px;
+}
+
+.course-content p{
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 20px;
+}
+
+.course-content span{
+    display: block;
+    font-size: 24px;
+    font-weight: bold;
+    color: #f59e0b;
+    margin-bottom: 20px;
+}
+
+.buy-btn{
+    display: block;
+    text-align: center;
+    background: #2563eb;
+    color: white;
+    text-decoration: none;
+    padding: 14px;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+.buy-btn:hover{
+    background: #1e40af;
+}
+/* testimonials */
+
+.testimonials{
+    padding: 100px 10px;
+    color: #1e3a8a;
+    text-align: center;
+}
+
+.testimonials h2{
+    font-size: 42px;
+    margin-bottom: 50px;
+}
+
+.testimonials-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.testimonials-card{
+    background: white;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.1);
+    transition: 0.3s;
+}
+
+.testimonials-card:hover{
+    transform: translateY(-10px);
+}
+
+.testimonials-card img{
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.testimonials-card h3{
+    margin-bottom: 10px;
+}
+
+.testimonials-card p{
+    color: #666;
+    line-height: 1.7;
+    margin-bottom: 10px;
+}
+
+.testimonials-card span{
+    font-size: 20px;
+}
+.contact{
+    padding: 100px 10%;
+    background: linear-gradient(135deg,rgb(40, 40, 239),rgb(3, 3, 70));
+
+    
+
+
+}
+.contect-content{
+    max-width: 1100px;
+    margin: auto;
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    background: white;
+    padding: 50px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(138, 30, 30, 0.15);
+
+
+}
+.contect-info{
+    flex:1;
+
+
+}
+.contect-form{
+    flex: 1;
+
+}
+.contect-info h2{
+    font-size: 40px;
+    color: #1e3a8a;
+    margin-bottom: 20px;
+
+}
+.contect-info p{
+    line-height: 1.8;
+    color: #555;
+
+}
+.contect-details{
+    margin-top: 30px;
+
+}
+.contect-details{
+    margin: 15px 0;
+    font-size: 18px;
+
+
+}
+.contect-form form{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.contect-form input,
+.contect-form textarea{
+    padding: 15px ;
+    margin-bottom: 15px;
+    border: none;
+    background: #f8fafc;
+    border-radius: 10px;
+    font-size: 16px;
+
+
+
+}
+.contect-form form input:focus,
+.contect-form form textarea:focus{
+    outline: none;
+    border: 2px solid #2158ef;
+}
+
+.contect-form form button{
+    background: orange;
+    color: white;
+    border: none;
+    padding: 15px;
+    font-size: 15px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.4s;
+}
+
+.contect-form form button:hover{
+    transform: translateY(-5px);
+}
+
+/* footer */
+
+.footer{
+    text-align: center;
+    padding: 20px;
+    background: rgb(42, 6, 6);
+    color: white;
+}
+
