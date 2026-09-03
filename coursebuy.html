@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buy course</title>
+</head>
+<style>
+    .purchase-course{
+        padding: 50px 10%;
+        background-color: #fff;
+    }
+    .purchase-container{
+        max-width: 600px;
+        margin: auto;
+        background-color: #fff;
+        padding: 40px;
+        border-radius: 20px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+    .purchase-container h2{
+        text-align: center;
+        color: blue;
+        margin-bottom: 25px;
+
+    }
+    .purchase-container p{
+        text-align: center;
+        color: #555;
+        margin-bottom: 25px;
+
+
+    }
+    .purchase-container input,
+    .purchase-container select{
+        width: 100%;
+        padding: 15px;
+        border: none;
+        margin-bottom: 15px;
+        border: 1px solid #ddd;
+        border-radius: 10px;
+        font-size: 16px;
+
+    }
+    .purchase-container button{
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 10px;
+    background-color: #2563eb;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.purchase-container button:hover{
+    background-color: #1d4ed8;
+}
+    
+    
+
+  </style>
+<body>
+
+<section class="purchase-course">
+    <div class="purchase-container">
+        <h2>Purchase Course</h2>
+        <p>Fill in your details to enroll in your preferred course.</p>
+
+        <form action="index.html">
+            <input type="text" placeholder="Full Name" required>
+            <input type="email" placeholder="Email Address" required>
+            <input type="tel" placeholder="Phone Number" required>
+
+            <select required>
+                <option value="">Select Course</option>
+                <option>Web Development</option>
+                <option>Data Science</option>
+                <option>Graphic Design</option>
+                <option>UI/UX Design</option>
+            </select>
+
+            <button type="submit">Purchase Now</button>
+        </form>
+    </div>
+</section>
+
+
+
+    
+</body>
+</html>
